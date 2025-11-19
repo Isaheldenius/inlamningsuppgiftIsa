@@ -37,7 +37,7 @@ public class WordLogic {
                 longestWordArray[0] = userTextArray[i];
                 longestWordArrayCount = 1;
             }
-            // Om det finns ett till ord som är lika långt med
+            // Om det finns ett till ord som är lika långt som
             // det längsta ordet läggs det till i array
             else if (userTextArray[i].length() == longestWord.length()) {
 
