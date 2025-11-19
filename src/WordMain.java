@@ -22,8 +22,8 @@ public class WordMain {
         System.out.println("Antal tecken: " + countChar.getCharacters());
         System.out.println("Antal ord: " + countChar.getWords());
         if (countChar.getLongestWord().length() > 0) {
-            String[] longestWordArray = countChar.longestWordArray;
-            if (longestWordArray.length == 0)
+            String[] longestWordArray = countChar.getLongestWords();
+            if (longestWordArray.length <= 1)
                 System.out.println("Det längsta ordet är: " + longestWordArray[0]);
             else {
                 System.out.print("Det längsta orden är: ");

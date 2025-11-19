@@ -1,14 +1,10 @@
 public class WordLogic {
-    int userLinesCount;
-    int userCharactersCount;
-    int userWordsCount;
-
-
-    String longestWord = "";
-    String[] longestWordArray = new String[0];
-    int longestWordArrayCount = 0;
-
-
+    private int userLinesCount;
+    private int userCharactersCount;
+    private int userWordsCount;
+    private String longestWord = "";
+    private String[] longestWordArray = new String[0];
+    private int longestWordArrayCount = 0;
 
     public boolean userCount(String userText) {
         // Använder .toLowerCase() om användaren skulle
