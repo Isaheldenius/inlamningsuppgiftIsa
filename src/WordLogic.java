@@ -7,8 +7,7 @@ public class WordLogic {
     private int longestWordArrayCount = 0;
 
     public boolean userCount(String userText) {
-        // Använder .toLowerCase() om användaren skulle
-        // skriva "stop" med stora bokstäver
+        // Använder .toLowerCase() om användaren skulle skriva "stop" med stora bokstäver
         if (userText.toLowerCase().equals("stop"))
             return false;
 
@@ -23,7 +22,7 @@ public class WordLogic {
         if (userText.equals(""))
             return true;
 
-        // Sparar antal ord
+        // Sparar antal ord. Använder .split om användaren skriver flera ord på samma rad
         String[] userTextArray = userText.split(" ");
         userWordsCount += userTextArray.length;
 
